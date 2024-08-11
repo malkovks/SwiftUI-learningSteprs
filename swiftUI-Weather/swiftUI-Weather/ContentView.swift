@@ -10,8 +10,8 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack {
-            
-            BackgroundView(topColor: .blue, 
+            //
+            BackgroundView(topColor: .blue,
                            midColor: Color("lightBlue"),
                            bottomColor: .white)
             
