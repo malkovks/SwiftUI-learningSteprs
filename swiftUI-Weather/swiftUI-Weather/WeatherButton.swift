@@ -16,7 +16,7 @@ struct WeatherButton: View {
     var body: some View {
         Text(buttonTitle)
             .frame(width: 280, height: 50, alignment: .center)
-            .background(backgroundColor)
+            .background(backgroundColor.gradient)//gприставка градиент добавляется для градиента?!?!?!?
             .foregroundStyle(textColor)
             .font(.system(size: 20, weight: .bold, design: .default))
             .clipShape(.capsule)

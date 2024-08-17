@@ -8,17 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var isNight = false
+    
     var body: some View {
         ZStack {
             //
-            BackgroundView(topColor: .blue,
-                           midColor: Color("lightBlue"),
-                           bottomColor: .white)
+            BackgroundView(isNight: $isNight)
             
             VStack {
                 CityTextView(cityName: "Cupretino", state: "CA")
                 
-                MainWeatherStatusView(imageName: "cloud.sun.fill",
+                MainWeatherStatusView(imageName: isNight ? "moon.stars.fill" : "cloud.sun.fill",
                                       temperature: 24)
                 
                 
@@ -44,9 +45,9 @@ struct ContentView: View {
                 Spacer()
                 //Сначала создается кнопка и указывается таргет, то есть что эта кнопка будет делать при нажатии, затем уже настраивается отображение кнопки
                 Button {
-                    print("tapped")
+                    isNight.toggle()
                 } label: {
-                    WeatherButton(buttonTitle: "Change day time",textColor: .blue,backgroundColor: .white)
+                    WeatherButton(buttonTitle: "Change day time",textColor: .white,backgroundColor: .mint)
                 }
                 Spacer()
             }
@@ -72,9 +73,12 @@ struct WeatherDetailStackView: View {
                 .textCase(.uppercase)
             Image(systemName: imageName)
                 .renderingMode(.original)
+                .symbolRenderingMode(.palette)
                 .resizable()
+                .foregroundStyle(.blue, .orange, .yellow)
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 40, height: 40)
+                
             Text("\(temperature)˚")
                 .font(.system(size: 20, weight: .medium))
                 .foregroundStyle(.white)
@@ -83,17 +87,14 @@ struct WeatherDetailStackView: View {
 }
 ///фоновый цвет
 struct BackgroundView: View {
-    var topColor: Color
-    var midColor: Color
-    var bottomColor: Color
+    
+    @Binding var isNight: Bool
     
     var body: some View {
         
-        
-        LinearGradient(gradient: Gradient(colors: [topColor, midColor, bottomColor]),
-                       startPoint: .topLeading,
-                       endPoint: .bottomTrailing)
-        .ignoresSafeArea(.all, edges: .all)
+        ContainerRelativeShape()
+            .fill(!isNight ? Color.black.gradient : Color.blue.gradient)
+            .ignoresSafeArea()
     }
 }
 

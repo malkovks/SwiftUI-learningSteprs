@@ -12,6 +12,10 @@
 		FD7DA6082C68EF8C0070F559 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD7DA6072C68EF8C0070F559 /* Assets.xcassets */; };
 		FD7DA60B2C68EF8C0070F559 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD7DA60A2C68EF8C0070F559 /* Preview Assets.xcassets */; };
 		FD7DA6122C69059D0070F559 /* WeatherButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7DA6112C69059D0070F559 /* WeatherButton.swift */; };
+		FD7DA6142C6DDD5E0070F559 /* ImageCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7DA6132C6DDD5E0070F559 /* ImageCustomView.swift */; };
+		FD7DA6182C7132B50070F559 /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = FD7DA6172C7132B50070F559 /* landmarkData.json */; };
+		FD7DA61A2C7132FC0070F559 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7DA6192C7132FC0070F559 /* Landmark.swift */; };
+		FD7DA61C2C71344D0070F559 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7DA61B2C71344D0070F559 /* ModelData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +25,10 @@
 		FD7DA6072C68EF8C0070F559 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD7DA60A2C68EF8C0070F559 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FD7DA6112C69059D0070F559 /* WeatherButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherButton.swift; sourceTree = "<group>"; };
+		FD7DA6132C6DDD5E0070F559 /* ImageCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCustomView.swift; sourceTree = "<group>"; };
+		FD7DA6172C7132B50070F559 /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
+		FD7DA6192C7132FC0070F559 /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
+		FD7DA61B2C71344D0070F559 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +64,12 @@
 				FD7DA6032C68EF8B0070F559 /* swiftUI_WeatherApp.swift */,
 				FD7DA6052C68EF8B0070F559 /* ContentView.swift */,
 				FD7DA6072C68EF8C0070F559 /* Assets.xcassets */,
+				FD7DA6192C7132FC0070F559 /* Landmark.swift */,
+				FD7DA61B2C71344D0070F559 /* ModelData.swift */,
 				FD7DA6092C68EF8C0070F559 /* Preview Content */,
 				FD7DA6112C69059D0070F559 /* WeatherButton.swift */,
+				FD7DA6132C6DDD5E0070F559 /* ImageCustomView.swift */,
+				FD7DA6172C7132B50070F559 /* landmarkData.json */,
 			);
 			path = "swiftUI-Weather";
 			sourceTree = "<group>";
@@ -130,6 +142,7 @@
 			files = (
 				FD7DA60B2C68EF8C0070F559 /* Preview Assets.xcassets in Resources */,
 				FD7DA6082C68EF8C0070F559 /* Assets.xcassets in Resources */,
+				FD7DA6182C7132B50070F559 /* landmarkData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,9 +153,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD7DA6142C6DDD5E0070F559 /* ImageCustomView.swift in Sources */,
 				FD7DA6062C68EF8B0070F559 /* ContentView.swift in Sources */,
 				FD7DA6042C68EF8B0070F559 /* swiftUI_WeatherApp.swift in Sources */,
 				FD7DA6122C69059D0070F559 /* WeatherButton.swift in Sources */,
+				FD7DA61A2C7132FC0070F559 /* Landmark.swift in Sources */,
+				FD7DA61C2C71344D0070F559 /* ModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
