@@ -11,7 +11,8 @@ import SwiftUI
 struct swiftUI_WeatherApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()//Sean allen content view
+            AppleTestContentView()
         }
     }
 }

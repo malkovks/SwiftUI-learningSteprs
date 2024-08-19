@@ -2,7 +2,7 @@
 
 import Foundation
 
-var landmark: [Landmark] = parsingJsonData("landmarkData.json")
+var landmarks: [Landmark] = parsingJsonData("landmarkData.json")
 
 func parsingJsonData<T: Decodable>(_ fileName: String) -> T {
     
@@ -22,6 +22,6 @@ func parsingJsonData<T: Decodable>(_ fileName: String) -> T {
         let decoder = JSONDecoder()
         return try decoder.decode(T.self, from: data)
     } catch {
-        fatalError("Can't decode current value")
+        fatalError("Can't decode current value \(fileName) as \(T.self):\n\(error)")
     }
 }

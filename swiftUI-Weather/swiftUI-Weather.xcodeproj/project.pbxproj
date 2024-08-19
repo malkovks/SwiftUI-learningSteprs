@@ -12,10 +12,17 @@
 		FD7DA6082C68EF8C0070F559 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD7DA6072C68EF8C0070F559 /* Assets.xcassets */; };
 		FD7DA60B2C68EF8C0070F559 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD7DA60A2C68EF8C0070F559 /* Preview Assets.xcassets */; };
 		FD7DA6122C69059D0070F559 /* WeatherButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7DA6112C69059D0070F559 /* WeatherButton.swift */; };
-		FD7DA6142C6DDD5E0070F559 /* ImageCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7DA6132C6DDD5E0070F559 /* ImageCustomView.swift */; };
 		FD7DA6182C7132B50070F559 /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = FD7DA6172C7132B50070F559 /* landmarkData.json */; };
 		FD7DA61A2C7132FC0070F559 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7DA6192C7132FC0070F559 /* Landmark.swift */; };
 		FD7DA61C2C71344D0070F559 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7DA61B2C71344D0070F559 /* ModelData.swift */; };
+		FD7DA6202C71D73B0070F559 /* BackgroundCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7DA61F2C71D73B0070F559 /* BackgroundCustomView.swift */; };
+		FD7DA6222C71D7540070F559 /* MapContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7DA6212C71D7540070F559 /* MapContentView.swift */; };
+		FD7DA6242C71D77D0070F559 /* DescriptionContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7DA6232C71D77D0070F559 /* DescriptionContentView.swift */; };
+		FD7DA6292C71DD030070F559 /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7DA6282C71DD030070F559 /* LandmarkRow.swift */; };
+		FD7DA62B2C71E42E0070F559 /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7DA62A2C71E42E0070F559 /* LandmarkList.swift */; };
+		FD7DA62D2C71E67F0070F559 /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7DA62C2C71E67F0070F559 /* LandmarkDetail.swift */; };
+		FD7DA62E2C71E70B0070F559 /* AppleTestContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7DA6132C6DDD5E0070F559 /* AppleTestContentView.swift */; };
+		FD7DA6302C71E73C0070F559 /* ImageViewCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7DA62F2C71E73C0070F559 /* ImageViewCircle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,10 +32,17 @@
 		FD7DA6072C68EF8C0070F559 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD7DA60A2C68EF8C0070F559 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FD7DA6112C69059D0070F559 /* WeatherButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherButton.swift; sourceTree = "<group>"; };
-		FD7DA6132C6DDD5E0070F559 /* ImageCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCustomView.swift; sourceTree = "<group>"; };
+		FD7DA6132C6DDD5E0070F559 /* AppleTestContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleTestContentView.swift; sourceTree = "<group>"; };
 		FD7DA6172C7132B50070F559 /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
 		FD7DA6192C7132FC0070F559 /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 		FD7DA61B2C71344D0070F559 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		FD7DA61F2C71D73B0070F559 /* BackgroundCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundCustomView.swift; sourceTree = "<group>"; };
+		FD7DA6212C71D7540070F559 /* MapContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapContentView.swift; sourceTree = "<group>"; };
+		FD7DA6232C71D77D0070F559 /* DescriptionContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionContentView.swift; sourceTree = "<group>"; };
+		FD7DA6282C71DD030070F559 /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
+		FD7DA62A2C71E42E0070F559 /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
+		FD7DA62C2C71E67F0070F559 /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
+		FD7DA62F2C71E73C0070F559 /* ImageViewCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewCircle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,15 +75,14 @@
 		FD7DA6022C68EF8B0070F559 /* swiftUI-Weather */ = {
 			isa = PBXGroup;
 			children = (
+				FD7DA6272C71DCF10070F559 /* List Group */,
+				FD7DA6262C71D7B80070F559 /* Resources */,
+				FD7DA6252C71D7A50070F559 /* Views */,
+				FD7DA61D2C71D6C10070F559 /* Model */,
 				FD7DA6032C68EF8B0070F559 /* swiftUI_WeatherApp.swift */,
-				FD7DA6052C68EF8B0070F559 /* ContentView.swift */,
 				FD7DA6072C68EF8C0070F559 /* Assets.xcassets */,
-				FD7DA6192C7132FC0070F559 /* Landmark.swift */,
-				FD7DA61B2C71344D0070F559 /* ModelData.swift */,
 				FD7DA6092C68EF8C0070F559 /* Preview Content */,
-				FD7DA6112C69059D0070F559 /* WeatherButton.swift */,
-				FD7DA6132C6DDD5E0070F559 /* ImageCustomView.swift */,
-				FD7DA6172C7132B50070F559 /* landmarkData.json */,
+				FD7DA61E2C71D6CD0070F559 /* Sean Allen content */,
 			);
 			path = "swiftUI-Weather";
 			sourceTree = "<group>";
@@ -80,6 +93,54 @@
 				FD7DA60A2C68EF8C0070F559 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FD7DA61D2C71D6C10070F559 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FD7DA6192C7132FC0070F559 /* Landmark.swift */,
+				FD7DA61B2C71344D0070F559 /* ModelData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FD7DA61E2C71D6CD0070F559 /* Sean Allen content */ = {
+			isa = PBXGroup;
+			children = (
+				FD7DA6112C69059D0070F559 /* WeatherButton.swift */,
+				FD7DA6052C68EF8B0070F559 /* ContentView.swift */,
+			);
+			path = "Sean Allen content";
+			sourceTree = "<group>";
+		};
+		FD7DA6252C71D7A50070F559 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FD7DA6132C6DDD5E0070F559 /* AppleTestContentView.swift */,
+				FD7DA6232C71D77D0070F559 /* DescriptionContentView.swift */,
+				FD7DA6212C71D7540070F559 /* MapContentView.swift */,
+				FD7DA61F2C71D73B0070F559 /* BackgroundCustomView.swift */,
+				FD7DA62F2C71E73C0070F559 /* ImageViewCircle.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FD7DA6262C71D7B80070F559 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FD7DA6172C7132B50070F559 /* landmarkData.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FD7DA6272C71DCF10070F559 /* List Group */ = {
+			isa = PBXGroup;
+			children = (
+				FD7DA6282C71DD030070F559 /* LandmarkRow.swift */,
+				FD7DA62A2C71E42E0070F559 /* LandmarkList.swift */,
+				FD7DA62C2C71E67F0070F559 /* LandmarkDetail.swift */,
+			);
+			path = "List Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,12 +214,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD7DA6142C6DDD5E0070F559 /* ImageCustomView.swift in Sources */,
+				FD7DA62B2C71E42E0070F559 /* LandmarkList.swift in Sources */,
+				FD7DA62E2C71E70B0070F559 /* AppleTestContentView.swift in Sources */,
+				FD7DA6302C71E73C0070F559 /* ImageViewCircle.swift in Sources */,
 				FD7DA6062C68EF8B0070F559 /* ContentView.swift in Sources */,
 				FD7DA6042C68EF8B0070F559 /* swiftUI_WeatherApp.swift in Sources */,
+				FD7DA62D2C71E67F0070F559 /* LandmarkDetail.swift in Sources */,
+				FD7DA6222C71D7540070F559 /* MapContentView.swift in Sources */,
 				FD7DA6122C69059D0070F559 /* WeatherButton.swift in Sources */,
 				FD7DA61A2C7132FC0070F559 /* Landmark.swift in Sources */,
+				FD7DA6202C71D73B0070F559 /* BackgroundCustomView.swift in Sources */,
 				FD7DA61C2C71344D0070F559 /* ModelData.swift in Sources */,
+				FD7DA6292C71DD030070F559 /* LandmarkRow.swift in Sources */,
+				FD7DA6242C71D77D0070F559 /* DescriptionContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
