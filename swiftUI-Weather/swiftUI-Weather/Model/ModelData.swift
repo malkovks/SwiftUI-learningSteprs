@@ -2,7 +2,11 @@
 
 import Foundation
 
-var landmarks: [Landmark] = parsingJsonData("landmarkData.json")
+@Observable class ModelData {
+    var landmarks: [Landmark] = parsingJsonData("landmarkData.json")
+}
+
+
 
 func parsingJsonData<T: Decodable>(_ fileName: String) -> T {
     

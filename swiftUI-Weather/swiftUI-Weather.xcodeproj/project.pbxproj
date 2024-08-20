@@ -23,6 +23,9 @@
 		FD7DA62D2C71E67F0070F559 /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7DA62C2C71E67F0070F559 /* LandmarkDetail.swift */; };
 		FD7DA62E2C71E70B0070F559 /* AppleTestContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7DA6132C6DDD5E0070F559 /* AppleTestContentView.swift */; };
 		FD7DA6302C71E73C0070F559 /* ImageViewCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7DA62F2C71E73C0070F559 /* ImageViewCircle.swift */; };
+		FD7DA6322C748C090070F559 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7DA6312C748C090070F559 /* FavoriteButton.swift */; };
+		FD7DA6362C7492FD0070F559 /* HexagonParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7DA6352C7492FD0070F559 /* HexagonParameters.swift */; };
+		FD7DA6382C7495040070F559 /* BadgeBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7DA6372C7495040070F559 /* BadgeBackground.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +46,9 @@
 		FD7DA62A2C71E42E0070F559 /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
 		FD7DA62C2C71E67F0070F559 /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
 		FD7DA62F2C71E73C0070F559 /* ImageViewCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewCircle.swift; sourceTree = "<group>"; };
+		FD7DA6312C748C090070F559 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
+		FD7DA6352C7492FD0070F559 /* HexagonParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonParameters.swift; sourceTree = "<group>"; };
+		FD7DA6372C7495040070F559 /* BadgeBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeBackground.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +81,8 @@
 		FD7DA6022C68EF8B0070F559 /* swiftUI-Weather */ = {
 			isa = PBXGroup;
 			children = (
+				FD7DA6342C7492E90070F559 /* Shape Drawing */,
+				FD7DA6332C748D6E0070F559 /* Helpers */,
 				FD7DA6272C71DCF10070F559 /* List Group */,
 				FD7DA6262C71D7B80070F559 /* Resources */,
 				FD7DA6252C71D7A50070F559 /* Views */,
@@ -117,10 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				FD7DA6132C6DDD5E0070F559 /* AppleTestContentView.swift */,
-				FD7DA6232C71D77D0070F559 /* DescriptionContentView.swift */,
-				FD7DA6212C71D7540070F559 /* MapContentView.swift */,
 				FD7DA61F2C71D73B0070F559 /* BackgroundCustomView.swift */,
-				FD7DA62F2C71E73C0070F559 /* ImageViewCircle.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -141,6 +146,26 @@
 				FD7DA62C2C71E67F0070F559 /* LandmarkDetail.swift */,
 			);
 			path = "List Group";
+			sourceTree = "<group>";
+		};
+		FD7DA6332C748D6E0070F559 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FD7DA6232C71D77D0070F559 /* DescriptionContentView.swift */,
+				FD7DA6212C71D7540070F559 /* MapContentView.swift */,
+				FD7DA62F2C71E73C0070F559 /* ImageViewCircle.swift */,
+				FD7DA6312C748C090070F559 /* FavoriteButton.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FD7DA6342C7492E90070F559 /* Shape Drawing */ = {
+			isa = PBXGroup;
+			children = (
+				FD7DA6352C7492FD0070F559 /* HexagonParameters.swift */,
+				FD7DA6372C7495040070F559 /* BadgeBackground.swift */,
+			);
+			path = "Shape Drawing";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,8 +239,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD7DA6362C7492FD0070F559 /* HexagonParameters.swift in Sources */,
 				FD7DA62B2C71E42E0070F559 /* LandmarkList.swift in Sources */,
 				FD7DA62E2C71E70B0070F559 /* AppleTestContentView.swift in Sources */,
+				FD7DA6382C7495040070F559 /* BadgeBackground.swift in Sources */,
 				FD7DA6302C71E73C0070F559 /* ImageViewCircle.swift in Sources */,
 				FD7DA6062C68EF8B0070F559 /* ContentView.swift in Sources */,
 				FD7DA6042C68EF8B0070F559 /* swiftUI_WeatherApp.swift in Sources */,
@@ -225,6 +252,7 @@
 				FD7DA61A2C7132FC0070F559 /* Landmark.swift in Sources */,
 				FD7DA6202C71D73B0070F559 /* BackgroundCustomView.swift in Sources */,
 				FD7DA61C2C71344D0070F559 /* ModelData.swift in Sources */,
+				FD7DA6322C748C090070F559 /* FavoriteButton.swift in Sources */,
 				FD7DA6292C71DD030070F559 /* LandmarkRow.swift in Sources */,
 				FD7DA6242C71D77D0070F559 /* DescriptionContentView.swift in Sources */,
 			);

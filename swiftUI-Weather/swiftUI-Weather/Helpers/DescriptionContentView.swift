@@ -21,7 +21,7 @@ struct DescriptionContentView: View {
                 .font(.system(size: 20,weight: .medium,design: .rounded))
             Divider()
             VStack(alignment: .leading,spacing: 20) {
-                Text("This page about" + secondText)
+                Text("This page about " + secondText)
                     .font(.system(size: 24,weight: .bold))
                     .frame(alignment: .leading)
                     

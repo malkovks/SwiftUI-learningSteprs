@@ -12,11 +12,9 @@ struct MapContentView: View {
     
     var coordinate: CLLocationCoordinate2D
     
-    /*@State*/ private var location: MKCoordinateRegion {
+    private var location: MKCoordinateRegion {
         .init(center: coordinate, span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05))
     }
-    
-//    @State private var location = MKCoordinateRegion(center: coordinate, span: MKCoordinateSpan(latitudeDelta: 0.05, longitudeDelta: 0.05))
     
     var body: some View {
         VStack {
@@ -39,8 +37,8 @@ struct MapContentView: View {
                         .clipShape(Circle())
                 }
                 .padding(.bottom,10)
+                
             }
-            
         }
         .frame(height: 400)
     }
