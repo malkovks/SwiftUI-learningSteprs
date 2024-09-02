@@ -4,6 +4,15 @@ import Foundation
 
 @Observable class ModelData {
     var landmarks: [Landmark] = parsingJsonData("landmarkData.json")
+    var hikes: [Hike] = parsingJsonData("hikeData.json")
+    var profile = Profile.default
+    var categories: [String: [Landmark]] {
+        Dictionary(grouping: landmarks) { $0.category.rawValue }
+    }
+    
+    var features: [Landmark] {
+        landmarks.filter { $0.isFeatured }
+    }
 }
 
 

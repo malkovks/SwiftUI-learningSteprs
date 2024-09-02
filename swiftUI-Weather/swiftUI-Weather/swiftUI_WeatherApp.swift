@@ -1,18 +1,16 @@
-//
-//  swiftUI_WeatherApp.swift
-//  swiftUI-Weather
-//
-//  Created by Константин Малков on 11.08.2024.
-//
+
 
 import SwiftUI
 
 @main
 struct swiftUI_WeatherApp: App {
+    
+    @State private var modelData = ModelData()
+    
     var body: some Scene {
         WindowGroup {
-//            ContentView()//Sean allen content view
-            AppleTestContentView()
+            ContentView()
+                .environment(modelData)
         }
     }
 }

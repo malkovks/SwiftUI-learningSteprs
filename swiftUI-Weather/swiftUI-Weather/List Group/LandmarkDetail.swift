@@ -1,39 +1,56 @@
-//
-//  LandmarkDetail.swift
-//  swiftUI-Weather
-//
-//  Created by Константин Малков on 18.08.2024.
-//
+/*
+See the LICENSE.txt file for this sample’s licensing information.
+
+Abstract:
+A view showing the details for a landmark.
+*/
 
 import SwiftUI
 
 struct LandmarkDetail: View {
     @Environment(ModelData.self) var modelData
     var landmark: Landmark
-    
+
     var landmarkIndex: Int {
-        modelData.landmarks.firstIndex { $0.id == landmark.id }!
+        modelData.landmarks.firstIndex(where: { $0.id == landmark.id })!
     }
-    
+
     var body: some View {
         @Bindable var modelData = modelData
-        
-        VStack {
-            ScrollView {
-                Spacer()
-                MapContentView(coordinate: landmark.locationCoordinates)
-                ImageViewCircle(image: landmark.image)
-                    
-                VStack(spacing:20) {
-                    DescriptionContentView(mainText: landmark.name, secondText: landmark.state, description: landmark.description)
+
+        ScrollView {
+            MapView(coordinate: landmark.locationCoordinates)
+                .frame(height: 300)
+
+            CircleImage(image: landmark.image)
+                .offset(y: -130)
+                .padding(.bottom, -130)
+
+            VStack(alignment: .leading) {
+                HStack {
+                    Text(landmark.name)
+                        .font(.title)
                     FavoriteButton(isSet: $modelData.landmarks[landmarkIndex].isFavorite)
                 }
-                Spacer()
+
+                HStack {
+                    Text(landmark.park)
+                    Spacer()
+                    Text(landmark.state)
+                }
+                .font(.subheadline)
+                .foregroundStyle(.secondary)
+
+                Divider()
+
+                Text("About \(landmark.name)")
+                    .font(.title2)
+                Text(landmark.description)
             }
-            
+            .padding()
         }
-        .padding(.horizontal, 20)
-        
+        .navigationTitle(landmark.name)
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

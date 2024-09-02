@@ -1,29 +1,31 @@
-/*
-See the LICENSE.txt file for this sample’s licensing information.
-
-Abstract:
-A view showing a list of landmarks.
-*/
+//
+//  LandmarkList.swift
+//  swiftUI-Weather
+//
+//  Created by Константин Малков on 18.08.2024.
+//
 
 import SwiftUI
 
 struct LandmarkList: View {
+    @State private var presentFavoritesOnly = false
     @Environment(ModelData.self) var modelData
-    @State private var showFavoritesOnly = false
-
+    
     var filteredLandmarks: [Landmark] {
-        modelData.landmarks.filter { landmark in
-            (!showFavoritesOnly || landmark.isFavorite)
+        return modelData.landmarks.filter { landmark in
+            (!presentFavoritesOnly || landmark.isFavorite)
         }
     }
-
+    
     var body: some View {
         NavigationSplitView {
             List {
-                Toggle(isOn: $showFavoritesOnly) {
+                Toggle(isOn: $presentFavoritesOnly) {
                     Text("Favorites only")
+                        .bold()
                 }
-
+                .tint(.mint)
+                
                 ForEach(filteredLandmarks) { landmark in
                     NavigationLink {
                         LandmarkDetail(landmark: landmark)
@@ -32,13 +34,15 @@ struct LandmarkList: View {
                     }
                 }
             }
-            .animation(.default, value: filteredLandmarks)
+            .animation(.smooth, value: filteredLandmarks)
             .navigationTitle("Landmarks")
+            .navigationBarTitleDisplayMode(.large)
         } detail: {
-            Text("Select a Landmark")
+            Text("Select landmark")
         }
     }
 }
+
 
 #Preview {
     LandmarkList()
